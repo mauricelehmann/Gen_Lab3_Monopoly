@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Update README.md
 Application
@@ -14,4 +15,7 @@ test2
 test2
 >>>>>>> Update README.md
 =======
+>>>>>>> Update README.md
+=======
+test2
 >>>>>>> Update README.md
