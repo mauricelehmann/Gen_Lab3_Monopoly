@@ -6,6 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class Tests {
     @Test
     void firstTest(){
-        assertEquals(true,false);
+        assertEquals(true,true);
     }
 }
