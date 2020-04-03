@@ -24,6 +24,9 @@
 	</dependencies>
 
 	<build>
+
+		<testSourceDirectory>test/java</testSourceDirectory>
+
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
