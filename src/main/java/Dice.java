@@ -14,7 +14,7 @@ public class Dice {
      *
      * @param min min value
      * @param max max value
-     * @return An int which value is between min value (inclusive) and max value (inclusive)
+     * @return A value is between min value (inclusive) and max value (inclusive)
      */
     private static int getRandomNumberInRange(int min, int max){
         Random r = new Random();
