@@ -11,7 +11,7 @@ public class Tests {
 
     @Test
     void getSquareName(){
-        Square square = new Square("square1");
-        assertEquals(square.getName(), "square1");
+        Square square = new Square(2);
+        assertEquals(square.getId(), 2);
     }
 }
