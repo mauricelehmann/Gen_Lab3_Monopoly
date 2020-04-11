@@ -1,5 +1,5 @@
-import main.Piece;
-import main.Square;
+package java;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

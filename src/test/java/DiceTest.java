@@ -1,3 +1,5 @@
+package java;
+
 import main.Dice;
 import org.junit.jupiter.api.Test;
 
