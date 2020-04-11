@@ -1,3 +1,5 @@
+import main.Piece;
+import main.Square;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

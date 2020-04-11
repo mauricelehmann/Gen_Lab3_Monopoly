@@ -1,4 +1,4 @@
-/*
+package main;/*
 * Dans le monopolyGame on va créer 8 instance de pièces
 * avec chacune un nom spécifique.
 *
