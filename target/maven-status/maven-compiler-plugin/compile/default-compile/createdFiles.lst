@@ -1,2 +1,5 @@
+Dice.class
 Application.class
-main\java\Piece.class
+Piece.class
+Square.class
+Player.class

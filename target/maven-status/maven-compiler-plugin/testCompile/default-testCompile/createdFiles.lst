@@ -1,2 +1,4 @@
-Tests.class
+SquareTest.class
 PieceTest.class
+DiceTest.class
+PlayerTest.class
