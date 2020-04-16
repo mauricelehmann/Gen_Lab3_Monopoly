@@ -2,12 +2,11 @@
 
 public class Square {
 
+    private String name;
     private int id;
-    /**
-     * Constuctor with id
-     * @param id
-     */
-    public Square(int id){
+
+    public Square(int id, String name){
+        this.name = name;
         this.id = id;
     }
 
@@ -15,8 +14,12 @@ public class Square {
      * Get the id of the square
      * @return id as int
      */
-    public int getId() {
-        return id;
+    public String getName() {
+        return name;
+    }
+
+    public int getId(){
+        return this.id;
     }
 
 }
