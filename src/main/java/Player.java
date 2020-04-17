@@ -32,6 +32,8 @@ public class Player {
             fvTot += dices[i].getFaceValue();
         }
 
+        System.out.println("Total du lancer des dés : " + fvTot);
+
         piece.setLocation(board.getSquare(piece.getLocation(), fvTot));
 
     }
