@@ -5,12 +5,12 @@ public class Player {
     private String name;
     private Piece piece;
     private Board board;
-    private Dice[] dices;
+    private Cup cup;
 
-    public Player(String name, Board board, Dice[] dices){
+    public Player(String name, Board board, Cup cup){
         this.name = name;
         this.board = board;
-        this.dices = dices;
+        this.cup = cup;
     }
 
     public void setPiece(Piece piece){
@@ -26,16 +26,11 @@ public class Player {
     }
 
     public void takeTurn(){
-        int fvTot = 0;
-        for (int i = 0; i < dices.length; i++) {
-            dices[i].roll();
-            fvTot += dices[i].getFaceValue();
-        }
-
+        cup.roll();
+        int fvTot = cup.getTotal();
         System.out.println("Total du lancer des dés : " + fvTot);
 
         piece.setLocation(board.getSquare(piece.getLocation(), fvTot));
-
     }
 
 

@@ -31,13 +31,14 @@ public class Application {
             numberOfPlayer = Integer.parseInt(userInput);
 
             if(numberOfPlayer > 8 || numberOfPlayer  < 2){
-                System.out.println("Nombre de joueur incorrect");
+                System.out.println("Nombre de joueurs incorrect");
             }else{
                 break;
             }
         }
 
         MonopolyGame game = new MonopolyGame(numberOfPlayer);
+        System.out.println(game.toString());
         game.playGame();
 
         System.out.println("\nLa partie est terminée.");
