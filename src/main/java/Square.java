@@ -10,10 +10,6 @@ public class Square {
         this.id = id;
     }
 
-    /**
-     * Get the id of the square
-     * @return id as int
-     */
     public String getName() {
         return name;
     }

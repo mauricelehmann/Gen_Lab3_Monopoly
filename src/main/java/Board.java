@@ -1,10 +1,8 @@
 
 public class Board {
 
-
     private static final int BOARD_SIZE = 40;
     private Square[] squares;
-
 
     public Board(){
         this.squares =  new Square[BOARD_SIZE];
@@ -16,7 +14,11 @@ public class Board {
 
     public Square getSquare(Square oldLoc, int fvTot){
         int newPos = (oldLoc.getId() + fvTot) % BOARD_SIZE;
-        return this.squares[newPos];
+        Square newLoc = squares[newPos];
+
+        System.out.println("Deplacement : " + oldLoc.getName() + " =====> " + newLoc.getName() + "\n");
+
+        return newLoc;
     }
 
     public Square getSquare(int id){
@@ -25,10 +27,4 @@ public class Board {
         }
         return squares[id];
     }
-
-
-
-
-
-
 }
