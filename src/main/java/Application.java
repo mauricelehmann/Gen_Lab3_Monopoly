@@ -38,7 +38,6 @@ public class Application {
         }
 
         MonopolyGame game = new MonopolyGame(numberOfPlayer);
-        System.out.println(game.toString());
         game.playGame();
 
         System.out.println("\nLa partie est terminée.");

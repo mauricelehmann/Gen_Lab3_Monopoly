@@ -14,12 +14,14 @@ public class MonopolyGame {
     public MonopolyGame(int numberOfPlayer){
         //NumberOfPlayer is checked in the main console
 
-        this.numberOfPlayer = numberOfPlayer;
+        System.out.println("La partie se fait avec " + numberOfPlayer + " joueurs.");
         this.players =  new Player[numberOfPlayer];
         for (int i = 0; i < numberOfPlayer; i++) {
             this.players[i] = new Player("Player " + i, board, cup);
             this.players[i].setPiece(new Piece("Piece " + i, board.getSquare(0)));
+            System.out.println(this.players[i].getName() + " joue avec " + this.players[i].getPiece().getName());
         }
+        System.out.println();
     }
 
     public void playGame(){
@@ -50,12 +52,4 @@ public class MonopolyGame {
         return dices;
     }
 
-    public String toString(){
-        StringBuilder str = new StringBuilder("La partie se fait avec " + numberOfPlayer + " joueurs. \n");
-        for(Player player : players){
-            str.append(player.getName() + " joue avec " + player.getPiece().getName() + "\n");
-        }
-
-        return str.toString();
-    }
 }
