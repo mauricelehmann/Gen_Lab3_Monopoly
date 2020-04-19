@@ -28,6 +28,7 @@ public class Application {
             System.out.println("Entrer le nombre de joueurs (2-8)");
 
             userInput = scanner.nextLine();
+
             try{
                 numberOfPlayer = Integer.parseInt(userInput);
             }catch(Exception e){
@@ -36,12 +37,11 @@ public class Application {
             }
 
             if(numberOfPlayer > 8 || numberOfPlayer  < 2){
-                System.out.println("Nombre de joueur incorrect");
+                System.out.println("Nombre de joueurs incorrect");
             }else{
                 break;
             }
         }
-
         MonopolyGame game = new MonopolyGame(numberOfPlayer);
         game.playGame();
 
